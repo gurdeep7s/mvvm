@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="categoryData"
+            type="com.strideinfo.assignment.ui.model.PopularcClassesModel" />
+
+        <variable
+            name="viewmodel"
+            type="com.strideinfo.assignment.ui.MainActivityViewModel" />
+
+
+    </data>
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:background="@{categoryData.isSelected?@drawable/selected_round_shadow:@drawable/round_shadow}"
+        android:elevation="3dp"
+        android:id="@+id/imageIV"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:padding="20dp"
+        android:tint="@{categoryData.isSelected? @color/white : @color/blue_color}"
+        app:setImage="@{categoryData}"></androidx.appcompat.widget.AppCompatImageView>
+
+
+</LinearLayout>
+
+</layout>

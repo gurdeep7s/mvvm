@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Gym Test App</string>
+    <string name="no_class_found">No Classes found for this Gym</string>
+</resources>
